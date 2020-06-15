@@ -22,6 +22,9 @@
     --fb-dark-btn-bg-hover: #2b54a7;
     --fb-light-btn-bg-hover: #e9ebee;
 
+    --fb-dark-btn-bg-active: #1d4698;
+    --fb-light-btn-bg-active: #d8dade;
+
     /* Fonts */
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -70,12 +73,14 @@ section {
     padding: 1rem;
 }
 
-section > p {
+section > h4 {
     font-size: 1.8rem;
     font-weight: bold;
     color: var(--heading);
     text-shadow: 1px 2px 1px aqua;
 }
+
+/* Buttons */
 
 button {
     cursor: pointer;
@@ -95,19 +100,29 @@ button {
     box-shadow: inset 0px 1px 0px 0px #4d73bf;
 }
 
-.fb-dark:hover {
-    background-color: var(--fb-dark-btn-bg-hover);
-}
+    .fb-dark:hover {
+        background-color: var(--fb-dark-btn-bg-hover);
+    }
+
+    .fb-dark:active {
+        background-color: var(--fb-dark-btn-bg-active);
+        border: 1px solid var(--fb-dark-btn-bg-active);
+    }
 
 .fb-light {
     background-color: var(--fb-light-btn-bg);
     color: var(--fb-light-btn-color);
-    border: 1px solid var(--fb-light-btn-bg);
+    border: 1px solid #ced0d4;
 }
 
-.fb-light:hover {
-    background-color: var(--fb-light-btn-bg-hover);
-}
+    .fb-light:hover {
+        background-color: var(--fb-light-btn-bg-hover);
+    }
+
+    .fb-light:active {
+        background-color: var(--fb-light-btn-bg-active);
+        border: 1px solid var(--fb-light-btn-bg-active);
+    }
 
 .fb-fix-size {
     display: grid;
